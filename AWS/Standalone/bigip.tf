@@ -46,7 +46,7 @@ data "aws_ami" "f5_ami" {
 
   filter {
     name   = "name"
-    values = ["*BIGIP*BYOL-LTM*1Boot Loc*"]
+    values = [var.f5_ami_search_name]
   }
 }
 
